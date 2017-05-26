@@ -3,6 +3,6 @@ services:
   nginx:
     image: nginx
     volumes:
-      - "${PWD}/pwd:/var/www/html"
+      - "${PWD}/pwd:/usr/share/nginx/html"
     ports:
       - 8000:80
