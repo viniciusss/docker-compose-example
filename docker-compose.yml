@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - "${PWD}/pwd:/var/www/html"
+    ports:
+      - 8000:80
